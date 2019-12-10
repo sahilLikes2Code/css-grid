@@ -1,0 +1,138 @@
+@import "cssreset";
+
+// Custom CSS
+
+// General
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.wrapper {
+    // max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 800px 351px 351px 387px 443px 597px 450px 398px;
+    grid-template-areas: 
+    "hdr hdr hdr hdr" 
+    "banner-photo banner-photo banner-desc banner-desc"
+    "donec donec crossleg my-skills"
+    "Box-1-4 Box-1-4 Box-1-4 Box-1-4" 
+    "phone-in-hand phone-in-hand my-exp my-exp" 
+    "my-edu my-edu macbook macbook" 
+    "say-hello say-hello  macbook-on-lap visit-my-office" 
+    "map map map map" 
+    "footer footer footer footer";    
+}
+
+// Header 
+
+
+.header {
+    background-color: red;
+    grid-area: hdr;
+    // background-color: red;
+    // display: flex;
+    // justify-content: space-between;
+    // grid-area: hdr;
+    // margin: 0 auto;
+    // height: 100px;
+    // width: 100%;
+    // .navigation-bar {
+    //     width: 100%;
+    //     padding: 1rem 0;
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: center;
+    //     .logo {
+    //         color: black;
+    //         font-size: 2rem;
+    //         box-shadow: 2px 2px 3px 0px white;
+    //     }
+    //     .nav a {
+    //         padding: 0 0.5rem;
+    //         color: rgb(117,115,114);
+    //         font-size: 0.8rem;
+    //         font-weight: 300;
+    //     }
+    //     .nav a:hover {
+    //         color: rgb(236,175,78);
+    //     }
+    // }
+}
+
+
+// banner-photo section
+.banner-photo {
+    grid-area: banner-photo;
+    background-color: pink;
+}
+// banner-desc section
+.banner-desc {
+    grid-area: banner-desc;
+    background-color: blue;
+}
+// donec section
+.donec {
+    grid-area: donec;
+    background-color: green;
+}
+// crossleg section
+.crossleg {
+    grid-area: crossleg;
+    background-color: yellow;
+}
+// my-skills section
+.my-skills {
+    grid-area: my-skills;
+    background-color: orange;
+}
+// Box-1/4 section
+.Box-1-4 {
+    grid-area: Box-1-4;
+    background-color: magenta;
+}
+// phone-in-hand section
+.phone-in-hand {
+    grid-area: phone-in-hand;
+    background-color: aquamarine;
+}
+// my-exp section
+.my-exp  {
+    grid-area: my-exp ;
+    background-color: teal;
+}
+// my-edu section
+.my-edu {
+    grid-area:  my-edu;
+    background-color: pink;
+}
+// macbook section
+.macbook {
+    grid-area: macbook;
+    background-color: black;
+}
+// say-hello section
+.say-hello {
+    grid-area: say-hello;
+    background-color: darkblue;
+}
+// macbook-on-lap section
+.macbook-on-lap {
+    grid-area: macbook-on-lap;
+    background-color: darkcyan;
+}
+// visit-my-office section
+.visit-my-office {
+    grid-area: visit-my-office;
+    background-color: darkgreen;
+}
+// map section
+.map {
+    grid-area: map;
+    background-color: darkred;
+}
+
+// footer section
+.footer {
+    grid-area: footer;
+    background-color: darkslateblue;
+}
